@@ -4,10 +4,11 @@ import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 
 const Home = lazy(() => import("./pages/Home"));
-// const About = lazy(() => import("./pages/About"));
+const About = lazy(() => import("./pages/About"));
 // const Contact = lazy(() => import("./pages/Contact"));
-// const Skills = lazy(() => import("./pages/Skills"));
-// const Portfolio = lazy(() => import("./pages/Portfolio"));
+const Property = lazy(() => import("./components/Property"));
+const Marla = lazy(() => import("./components/Marla"));
+const Properties = lazy(() => import("./pages/Properties"));
 // const Success = lazy(() => import("./pages/Success"));
 const Loading = lazy(() => import("./components/Loading"));
 
@@ -15,11 +16,14 @@ const App = () => {
   return (
     <>
       <Suspense fallback={<Loading />}>
-      <Navbar />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={""} />
-          <Route path="/projects" element={""} />
+          <Route path="/about" element={<About />} />
+          <Route path="/all-properties" element={<Properties />} />
+          <Route path="/property/:name" element={<Property />}>
+            <Route path=":marla" element={<Marla />} />
+          </Route>
         </Routes>
         <Footer />
       </Suspense>

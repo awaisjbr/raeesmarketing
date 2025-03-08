@@ -24,10 +24,10 @@ const Navbar = () => {
     <div className="z-50 w-full top-0 left-0 fixed">
       {/* Header Top */}
       <div className={`flex md:flex-row border-b-2 border-[#947054] h-10`}>
-        <div className="bg-[#212529] text-[#808080] flex items-center pl-6 w-full text-sm"><a href="mailto:contact@resees.com">contact@resees.com</a></div>
+        <div className="bg-[#212529] text-[#808080] flex items-center pl-2 w-full text-sm"><a href="mailto:contact@resees.com">contact@raeesmarketing.com</a></div>
         <div className="bg-[#947054] w-full text-white flex items-center gap-5 md:w-[40%] lg:w-[30%]">
           <FiPhoneCall className="bg-white h-full w-12 text-[#947054] p-3" />
-          <a className="text-xs md:text-sm" href="tel:+923001234567">+92 300 1234567</a>
+          <a className="text-xs md:text-sm" href="tel:+923280555595">+92 328 0555595</a>
         </div>
       </div>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
         {/* Nav Links */}
         <div className="flex gap-5 lg:gap-10 pr-6 md:pr-16 lg:pr-32 text-xs sm:text-sm md:text-lg font-semibold text-white lg:text-xl">
           <NavLink to={"/"}>Home</NavLink>
-          <NavLink to={"/projects"}>Projects</NavLink>
+          <NavLink to={"/all-properties"}>Properties</NavLink>
           <NavLink to={"/about"}>About</NavLink>
         </div>
       </div>

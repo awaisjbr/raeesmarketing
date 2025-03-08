@@ -8,6 +8,7 @@ import gas from "../assets/gas.png";
 import sewerage from "../assets/sewerage.png";
 import fda from "../assets/fda.png";
 import { useInView } from "react-intersection-observer";
+import { NavLink } from 'react-router-dom';
 
 const FeaturedProperties = () => {
     const { ref, inView } = useInView({ triggerOnce: true, threshold: 0 });
@@ -31,7 +32,7 @@ const FeaturedProperties = () => {
                     <img className='w-10' src={sewerage} alt="" title='Sewerage Line'/>
                 </div>
             </div>
-            <button className='absolute bottom-1 rounded-md right-1 py-1 px-3 bg-green-500 hover:bg-green-600 active:bg-green-700 text-white'>Explore</button>
+            <NavLink to={`property/${"grandcity"}`}><button className='absolute bottom-1 rounded-md right-1 py-1 px-3 bg-green-500 hover:bg-green-600 active:bg-green-700 text-white'>Explore</button></NavLink>
         </motion.div>
         <motion.div ref={ref} initial={{opacity: 0.7, scale: 0.7 }} animate={inView ? { opacity: 1, scale : 1 } : {}} transition={{ duration: 2, delay : 1.5 }} className='flex flex-col cursor-pointer overflow-hidden relative border border-[#947054]'>
             <img src={omegaEnclaveCard} className='w-80 md:w-96 h-72 hover:scale-110 transition-all duration-300 ease-linear' alt="omegaCard" />
