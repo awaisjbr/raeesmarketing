@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import omega from "../assets/omega.jpg";
-import grandcity2 from "../assets/grandcity.png";
+import omega from "../assets/omega/omega.jpg";
+import grandcity2 from "../assets/grandcity/grandcity.png";
 
 
 const Hero = () => {
@@ -12,8 +12,8 @@ const Hero = () => {
       <motion.img initial={{opacity: 0, y: 50}} animate={{opacity:1, y: 0}} transition={{ duration: 1, ease:"easeOut", delay: 1.5 }} src={grandcity2} className='md:hidden mt-10' alt="" />
     
         {/* Hero Text  */}
-      <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: "easeOut", delay:1 }}
-      className='absolute self-center top-[168] bg-black/80 md:text-2xl lg:text-5xl text-white p-2 hidden md:block'>FIND YOUR DREAM PLACE TO LIVE</motion.h1>
+      <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: "easeOut", delay:3 }}
+      className='absolute self-center bg-black/80 md:text-2xl lg:text-5xl text-white p-2 hidden md:block'>FIND YOUR DREAM PLACE TO LIVE</motion.h1>
     </motion.div>
   )
 }

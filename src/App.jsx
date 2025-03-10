@@ -5,10 +5,9 @@ import Footer from "./components/Footer";
 
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
-// const Contact = lazy(() => import("./pages/Contact"));
+const Contact = lazy(() => import("./pages/Contact"));
 const Property = lazy(() => import("./components/Property"));
 const Marla = lazy(() => import("./components/Marla"));
-const Properties = lazy(() => import("./pages/Properties"));
 // const Success = lazy(() => import("./pages/Success"));
 const Loading = lazy(() => import("./components/Loading"));
 
@@ -20,9 +19,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/all-properties" element={<Properties />} />
-          <Route path="/property/:name" element={<Property />}>
-            <Route path=":marla" element={<Marla />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/property">
+            <Route path=":name" element={<Property />} />
+            <Route path=":name/:marla" element={<Marla />} />
           </Route>
         </Routes>
         <Footer />

@@ -1,14 +1,15 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
-import grand3 from "../assets/grand3.jpeg"
+import { Outlet, useParams } from 'react-router-dom';
+import grand3 from "../assets/grandcity/grand3.jpeg"
 
 
 const Marla = () => {
-    const {marla} = useParams();
-    console.log(marla);
+  const {marla} = useParams()
   return (
-    <div className='h-screen flex items-center justify-center'>
+    <div className=''>
         <img src={grand3} alt="" />
+        <button>{marla}</button>
+        {/* <Outlet /> */}
     </div>
   )
 }

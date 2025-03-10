@@ -3,6 +3,8 @@ import logo from "../assets/logo1.png"
 import {FiPhoneCall} from "react-icons/fi";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedinIn } from 'react-icons/fa6';
+import footerImg from "../assets/footer.jpg"
 
 const Footer = () => {
   return (
@@ -37,8 +39,12 @@ const Footer = () => {
           </div>
           {/* Contact From */}
           <div className='text-[#7D7D7D] flex flex-col gap-10'>
-            <h1 className='text-white font-semibold underline decoration-[#947054] underline-offset-4'>FIND US</h1>
-            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.145369443961!2d73.05233937545218!3d31.547624874201386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39224108be55a961%3A0x93c8288f27282d2e!2sGrand%20City%20Faisalabad%20-%20Phase-1!5e0!3m2!1sen!2s!4v1741189742987!5m2!1sen!2s" width="330" height="300" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe></div>
+            <h1 className='text-white font-semibold underline decoration-[#947054] underline-offset-4'>SOCIAL</h1>
+            {/* <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.145369443961!2d73.05233937545218!3d31.547624874201386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39224108be55a961%3A0x93c8288f27282d2e!2sGrand%20City%20Faisalabad%20-%20Phase-1!5e0!3m2!1sen!2s!4v1741189742987!5m2!1sen!2s" width="330" height="300" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe></div> */}
+            <img src={footerImg} alt="footerImg" className='w-72' />
+            <div className='flex items-center gap-12 text-xl'>
+              <FaFacebook className='cursor-pointer text-[#947054] hover:scale-125 duration-200 ease-linear' /><FaInstagram className='cursor-pointer text-[#947054] hover:scale-125 duration-200 ease-linear' /><FaLinkedinIn className='cursor-pointer text-[#947054] hover:scale-125 duration-200 ease-linear' />
+            </div>
           </div>
         </div>
         <div className='bg-[#111113] py-3'><p className='text-[#7D7D7D] text-center'>{`Copyright ©2025 All rights reserved | [developed by a-coder] `}</p></div>
