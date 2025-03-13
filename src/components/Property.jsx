@@ -18,7 +18,7 @@ import restaurant from "../assets/icons/restaurant.png";
 import saloon from "../assets/icons/saloon.png";
 import school from "../assets/icons/school.png";
 import video from "../assets/grandcity/grandvideoceo.mp4";
-import grandcityIntroVideo from "../assets/grandcity/grandcityIntro.mp4";
+// import grandcityIntroVideo from "../assets/grandcity/grandcityIntro.mp4";
 import amenities from "../assets/grandcity/amenities.jpeg";
 import amenities1 from "../assets/grandcity/amenities1.jpeg";
 import amenities2 from "../assets/grandcity/amenities2.jpeg";
