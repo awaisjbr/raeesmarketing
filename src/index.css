@@ -62,8 +62,8 @@
 } */
 
 .carousel{
-    animation: anim 10s infinite ease-in;
-    animation-delay: 10s;
+    animation: anim 5s infinite ease-in;
+    animation-delay: 5s;
 }
 @keyframes anim{
     0%{

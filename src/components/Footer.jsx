@@ -31,8 +31,8 @@ const Footer = () => {
             <div className='text-[#7D7D7D] flex flex-col gap-8 mt-8'>
               <h1 className='text-white font-semibold underline decoration-[#947054] underline-offset-4'>ADDRESS</h1>
               <div className='flex flex-col gap-3'>
-                <div className='flex items-center gap-5'><FiPhoneCall className='text-[#947054]' /><p>+92 300 1234567</p></div>
-                <div className='flex items-center gap-5'><HiOutlineMailOpen className='text-[#947054]'/><p>contact@resees.com</p></div>
+                <div className='flex items-center gap-5'><FiPhoneCall className='text-[#947054]' /><a href="tel:+923280555595">+92 328 0555595</a></div>
+                <div className='flex items-center gap-5'><HiOutlineMailOpen className='text-[#947054]'/><a href="mailto:contact@raeesmarketing.com">contact@raeesmarketing.com</a></div>
                 <div className='flex items-center gap-5'><FaMapMarkerAlt className='text-[#947054]'/><p>Sarghodah Road, By Pass, Faisalabad.</p></div>
               </div>
             </div>
